@@ -1,0 +1,81 @@
+.cont{
+    width: 100%;
+    top:80px;
+    height: 100vh;
+    position: absolute;
+    display: flex !important;
+    flex-direction: column !important;
+}
+.real{
+    width: 100%;
+    margin:20% auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.real h6{
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #fff;
+    transform: translateZ(0);
+}
+.real h1{
+    font-size: 80px;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.sample{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.sample span{
+    background: hsla(0,0%,100%,.1);
+    padding: 0px 20px;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    display: inline-flex;
+    margin: 0 8px 8px;
+}
+.sample span p{
+    margin-top: 10px;
+}
+.social-icons{
+    position: absolute;
+    right: 40px;
+    width: 28%;
+    height: 40px;
+    bottom: 89px;
+}
+.social-icons a{
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    background: #fff;
+    border-radius: 50%;
+    line-height: 35px;
+    color: #1c1d24;
+    margin-right: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: .4s ease-in-out;
+}
+.social-icons a:hover{
+    background: #dc965a;
+    color: #fff;
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+}
+.social-icons a img{
+    width: 30px;
+}
