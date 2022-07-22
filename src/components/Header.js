@@ -1,22 +1,24 @@
 import { useState } from "react";
-import "./Header.css"
-import logo from "../assets/logo.png"
+import "./Header.css";
+import { HashLink as Link } from "react-router-hash-link";
+import logo from "../assets/logo.png";
 
 export default function Navbar() {
-
-    const [isNavExpanded, setIsNavExpanded] = useState(false)
-    return (
-      <div className="nav">
+  const [isNavExpanded, setIsNavExpanded] = useState(false);
+  return (
+    <div className="nav">
       <nav className="navigation-menu">
         <div className="image">
-        <a href="/" className="brand-name">
-        <img src={logo} alt="logo" />
-        </a>
+          <a href="/" className="brand-name">
+            <img src={logo} alt="logo" />
+          </a>
         </div>
-        <button className="hamburger"
-        onClick={() => {
-          setIsNavExpanded(!isNavExpanded);
-        }} >
+        <button
+          className="hamburger"
+          onClick={() => {
+            setIsNavExpanded(!isNavExpanded);
+          }}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-5 w-5"
@@ -33,14 +35,19 @@ export default function Navbar() {
         <div
           className={
             isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
-    } >
+          }
+        >
           <ul>
-            <li className="home">
-              <a href="/home">Home</a>
-            </li>
-            <li>
-              <a href="/about">About Us</a>
-            </li>
+            <Link to="#landing" smooth>
+              <li className="home">
+                <a href="">Home</a>
+              </li>
+            </Link>
+            <Link to="#about" active smooth>
+              <li>
+                <a href="">About Us</a>
+              </li>
+            </Link>
             <li>
               <a href="/services">Services</a>
             </li>
@@ -56,6 +63,6 @@ export default function Navbar() {
           </ul>
         </div>
       </nav>
-      </div>
-    );
-  }
+    </div>
+  );
+}

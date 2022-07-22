@@ -5,13 +5,50 @@ import "./about.css";
 import timydev from "../assets/timydev.jpg";
 
 const About = () => {
+  const myData = [
+    {
+      name: "Birth Date",
+      text: "10th October 1997",
+    },
+    {
+      name: "Age",
+      text: "26Yr",
+    },
+    {
+      name: "Residence",
+      text: "Nigeria",
+    },
+    {
+      name: "Email",
+      text: "eketimothy84@gmail.com",
+    },
+    {
+      name: "Phone",
+      text: "08104410083",
+    },
+    
+    {
+      name: "github",
+      text: "github.com/mrTimy",
+    },
+   
+    {
+      name: "Address",
+      text: "Gwarinpa, Abuja",
+    },
+    {
+      name: "FreeLance",
+      text: "Available",
+    },
+  ];
+
   return (
     <div style={{ width: "100%" }}>
-      <Container fluid className="section">
+      <Container fluid className="section" id="about">
         <Row className="contain">
           <Col className="left-row">
             <Col className="left">
-              <img src={timydev} alt="Display" />
+              <img src={ timydev } alt="Display" />
             </Col>
           </Col>
           <Col className="right-row">
@@ -32,42 +69,15 @@ const About = () => {
                   interactions. Check out my Portfolio
                 </p>
                 <Row className="about-list">
-                  <Col md={6} className="details-left">
-                    <div className="media">
-                      <label>Birth date</label>
-                      <p>10th October 1995</p>
-                    </div>
-                    <div className="media">
-                      <label>Age</label>
-                      <p>26Yr</p>
-                    </div>
-                    <div className="media">
-                      <label>Residence</label>
-                      <p>Nigeria</p>
-                    </div>
-                    <div className="media">
-                      <label>Address</label>
-                      <p>FCT, Abuja</p>
-                    </div>
-                  </Col>
-                  <Col md={6} className="details-left">
-                    <div className="media">
-                      <label>Email</label>
-                      <p>eketimothy84@gmail.com</p>
-                    </div>
-                    <div className="media">
-                      <label>Phone</label>
-                      <p>08104410083</p>
-                    </div>
-                    <div className="media">
-                      <label>Freelance</label>
-                      <p>available</p>
-                    </div>
-                    <div className="media">
-                      <label>Github</label>
-                      <p>github.com/mrtimy</p>
-                    </div>
-                  </Col>
+                  {myData.map((item, index) => (
+                      <Col md={6} className="details-left" key={index}>
+                      <div className="media">
+                        <label>{item.name}</label>
+                        <p>{item.text}</p>
+                      </div>
+                    </Col>
+                  )
+                  )}
                 </Row>
               </Col>
             </Container>
@@ -76,6 +86,9 @@ const About = () => {
       </Container>
     </div>
   );
+// })
+
+// return <div> { renderData }</div>
 };
 
 export default About;

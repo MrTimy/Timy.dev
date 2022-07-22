@@ -1,0 +1,90 @@
+.section-skill{
+    width: 100vw;
+    height: 90vh;
+    color: white;
+    margin: 1506.5px 0 0 -17px;
+    background-color: rgb(1, 1, 26);
+}
+.skill-section{
+    width: 90%;
+    height: 80vh;
+    margin: 20px 150px;
+    z-index: 1;
+    align-items: center!important;
+}
+.education{
+    flex: 0 0 auto;
+   width:30%;
+    height: 80%;
+    margin: 80px 20px;
+    padding: 10px;
+    transform: translateZ(0);
+    transition-delay: .2s;
+    transition-duration: 1.2s;
+    transition-timing-function: ease;
+}
+.header-1{
+    margin-bottom: 30px;
+}
+.header-1 h4{
+    font-size: 24px;
+    position: relative;
+    padding: 0 0 15px;
+    margin: 0;
+    color: #fff;
+    font-weight: 700;
+}
+.header-1 h4::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30px;
+    height: 3px;
+    background: #dc965a;
+}
+.dark-date{
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 16px;
+    color: #fff;
+    background: #1c1d24;
+    padding: 4px 12px;
+    border-radius: 30px;
+    font-size: 12px;
+    line-height: 1;
+}
+.dark-date h6{
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
+}
+.dark-date p{
+    margin: 0;
+    color: hsla(0,0%,100%,.8);
+}
+.stack{
+    font-size: 16px;
+    margin: 0 0 10px;
+    color: #fff;
+    line-height: 48px;
+    font-weight: 600;
+}
+.list-group-item {
+    background-color:#dc965a;
+    padding: 15px;
+    border-bottom: 2px dotted black;
+}
+#back-drop, #theme{
+    background-color: #1c1d24;
+    padding: 15px;
+    color: #fff;
+}
+#theme{
+    background-color: #1c1d24;
+    padding: 15px;
+}
+.progress-bar {
+    background-color:#dc965a;
+    width: 80%;
+}

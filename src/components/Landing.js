@@ -12,7 +12,7 @@ import icons8github from '../assets/icons8github.svg'
 const Landing = () => {
   return (
     <div>
-        <Container className="cont">
+        <Container className="cont" id="landing">
          <Row>
             <Col className="real">
             <h6 >Hi There, I'm</h6>
@@ -23,16 +23,18 @@ const Landing = () => {
               <span> <p>SOFTWARE ENGINEER</p></span>
             </Col>
             <Col className="social-icons">
-            <a href="www.facebook.com"> 
+              
+            <a href="https://www.facebook.com/Timyslimz"> 
               <img src={ icons8facebook} alt="facebook" />
             </a>
-            <a href="www.facebook.com"> 
+
+            <a href="https://instagram.com/mr_teemy"> 
               <img src={ icons8instagram} alt="instagram" />
             </a>
-            <a href="www.facebook.com"> 
+            <a href="https://www.linkedin.com/in/eke-timothy-365a2a14b "> 
               <img src={ icons8linkedin} alt="linkedin" />
             </a>
-            <a href="www.facebook.com"> 
+            <a href="https://twitter.com/eketimothychiem "> 
               <img src={ icons8twitter} alt="twitter" />
             </a>
             <a href="www.github.com/mrtimy"> 

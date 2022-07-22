@@ -1,6 +1,7 @@
 .section{
     position: absolute;
     width: 100%;
+    color: white;
     margin: 753.5px 0 0 -12px;
 }
 .contain{
@@ -41,7 +42,6 @@
     width: 85%;
     height: 70%;
     margin-top: 10em;
-    /* background-color: #1a1a1a; */
 }
 .about-me h3{
     font-size: 40px;
