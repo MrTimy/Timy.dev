@@ -4,9 +4,6 @@
   box-sizing: border-box;
 }
 .App {
-  background-color: #010103;
-  min-height: 100vh;
-  display: flex;
-  color: white;
+  width: 100vw;
 }
 

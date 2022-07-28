@@ -12,7 +12,7 @@ import icons8github from '../assets/icons8github.svg'
 const Landing = () => {
   return (
     <div>
-        <Container className="cont" id="landing">
+        <Container fluid className="cont" id="landing">
          <Row>
             <Col className="real">
             <h6 >Hi There, I'm</h6>

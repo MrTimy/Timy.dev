@@ -43,7 +43,7 @@ const About = () => {
   ];
 
   return (
-    <div style={{ width: "100%" }}>
+    <div>
       <Container fluid className="section" id="about">
         <Row className="contain">
           <Col className="left-row">

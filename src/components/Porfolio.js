@@ -61,8 +61,8 @@ const Porfolio = () => {
     },
   ]
   return (
-    <div>
-      <Container fluid className="section-skill">
+    <div style={{width:'80vw'}}>
+      <Container fluid id="section-skill">
         <Row className="skill-section">
           <Col lg="4" className="education">
             <div className="header-1">

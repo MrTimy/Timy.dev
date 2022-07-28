@@ -1,15 +1,15 @@
-.section-skill{
+
+#section-skill{
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
+    margin: 0 !important;
     color: white;
-    margin: 1506.5px 0 0 -17px;
     background-color: rgb(1, 1, 26);
 }
 .skill-section{
     width: 90%;
     height: 80vh;
-    margin: 20px 150px;
-    z-index: 1;
+    margin: 10px 100px;
     align-items: center!important;
 }
 .education{
@@ -71,7 +71,9 @@
     font-weight: 600;
 }
 .list-group-item {
-    background-color:#dc965a;
+    /* background-color:#dc965a; */
+    background-color: #f7c498;
+    
     padding: 15px;
     border-bottom: 2px dotted black;
 }
@@ -84,7 +86,15 @@
     background-color: #1c1d24;
     padding: 15px;
 }
+#theme:hover{
+    box-shadow: 5px 10px 18px #f7c498;
+    width:370px ;
+}
 .progress-bar {
     background-color:#dc965a;
     width: 80%;
+}
+#greek:hover{
+    box-shadow: 5px 10px 18px #f7c498;
+    width:380px ;
 }

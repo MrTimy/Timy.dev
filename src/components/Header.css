@@ -64,7 +64,9 @@ body {
     padding: 20px;
     
   }
- 
+ a{
+  text-decoration: none;
+ }
   .navigation-menu li a {
     /* increases the surface area of the anchor tag to span more than just the anchor text */
     text-decoration: none;

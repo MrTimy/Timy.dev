@@ -40,12 +40,12 @@ export default function Navbar() {
           <ul>
             <Link to="#landing" smooth>
               <li className="home">
-                <a href="">Home</a>
+                <a href="./">Home</a>
               </li>
             </Link>
             <Link to="#about" active smooth>
               <li>
-                <a href="">About Us</a>
+                <a href="./">About Us</a>
               </li>
             </Link>
             <li>
@@ -57,9 +57,11 @@ export default function Navbar() {
             <li>
               <a href="/blog">Blog</a>
             </li>
+            <Link to="#contact" active smooth>
             <li>
-              <a href="/contact">Contact</a>
+              <a href="./">Contact</a>
             </li>
+            </Link>
           </ul>
         </div>
       </nav>
